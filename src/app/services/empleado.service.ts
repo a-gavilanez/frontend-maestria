@@ -7,7 +7,8 @@ import { Empleado } from '../models/empleado';
 export class EmpleadoService { 
 
   //URL_API='http://localhost:3000/api/empleados'; 
-  URL_API = 'http://52.70.28.11/api/v1/empleados';
+  //URL_API = 'http://52.70.28.11/api/v1/empleados';
+  URL_API = 'https://angel-gavilanez.duckdns.org/api/v1/empleados';
   //URL_API='assets/json/empleado.json';
 
  // URL_API='https://jsonplaceholder.typicode.com/users';
