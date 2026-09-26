@@ -18,10 +18,10 @@ export class EmpleadoComponent implements OnInit {
   } 
   
     getEmpleados() { 
-      this.empleadoService.getEmpleados().subscribe( res=>{ 
-        this.empleadoService.empleados=res; }, err=>console.error(err)
-        ); 
-      } 
+      this.empleadoService.getEmpleados().subscribe( (res: any)=>{ 
+        this.empleadoService.empleados = res.data ? res.data : res; }, err=>console.error(err)
+      ); 
+    }
       
     addEmpleado(form:NgForm){ 
       this.empleadoService.createEmpleado(form.value).subscribe( 
